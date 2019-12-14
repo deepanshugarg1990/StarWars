@@ -19,7 +19,7 @@ export default class LoginComponent extends Component {
     async componentDidMount() {
         let isLogin = await Utility.getAsyncStorage(Strings.IS_LOGIN)
         if (isLogin === "true") {
-            this.props.navigation.navigate('detailScreen')
+            this.props.navigation.replace('detailScreen')
         }
     }
 
