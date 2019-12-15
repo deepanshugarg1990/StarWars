@@ -1,7 +1,7 @@
 import LoginComponent from './LoginComponent';
-import DetailContainer from './DetailContainer';
+import SearchContainer from './SearchContainer';
 
 export {
     LoginComponent,
-    DetailContainer
+    SearchContainer
 }
