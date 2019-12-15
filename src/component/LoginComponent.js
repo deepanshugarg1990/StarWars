@@ -17,7 +17,7 @@ export default class LoginComponent extends Component {
     }
 
     async componentDidMount() {
-        let isLogin = await Utility.getAsyncStorage(Strings.IS_LOGIN)
+        let isLogin = await Utility.getAsyncStorage(Strings.IS_LOGIN);
         if (isLogin === "true") {
             this.props.navigation.replace('searchContainer')
         }
@@ -57,7 +57,7 @@ export default class LoginComponent extends Component {
             } else {
                 this.setState({isLoading: false});
                 const title = 'Unable to sign in';
-                const message = 'The username or password that you typed is incorrect'
+                const message = 'The username or password that you typed is incorrect';
                 alert(title, message);
             }
         }
