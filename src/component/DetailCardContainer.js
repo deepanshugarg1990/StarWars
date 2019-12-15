@@ -5,6 +5,12 @@ import DetailsCardItem from "../screens/DetailsCardItem";
 
 export default class DetailCardContainer extends Component {
 
+    static navigationOptions = ({navigation}) => {
+        const {params = {}} = navigation.state;
+        return {
+            title: params.item.name
+        };
+    };
 
     constructor(props) {
         super(props);
